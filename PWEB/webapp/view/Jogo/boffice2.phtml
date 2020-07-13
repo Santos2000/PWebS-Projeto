@@ -1,0 +1,43 @@
+<?php
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\WebObjects\Layout;
+use ArmoredCore\Facades\AssetBundler;
+use ArmoredCore\Facades\DebugRenderer;
+use ArmoredCore\WebObjects\URL;
+use ArmoredCore\WebObjects\View;
+use ArmoredCore\WebObjects\Post;
+
+require "connect.php";
+
+$sql = "SELECT idJogador, NomeJogador, EmailJogador, estado FROM jogador";
+$result = mysqli_query($conn, $sql);
+
+// Se existirem mais do que um jogador na lista, ele apresenta a lista de jogadores
+if (mysqli_num_rows($result)>0){
+    while ($row = $result -> fetch_assoc()) {
+        echo "<tr>";
+        echo "<td>" . $row['idJogador'] . "</td>";
+        echo "<td>" . $row['NomeJogador'] . "</td>";
+        echo "<td>" . $row['EmailJogador'] . "</td>";
+        echo "<td>" . $row['estado'] . "</td>";
+        echo "</tr>";
+    }
+}
+
+// Código para banir o jogador do ID introduzido no textbox
+if (isset($_GET['banir'])){
+    $sql = "UPDATE jogador SET estado='Banido' WHERE idJogador='". $_GET['idjogador'] ."' ";
+    $result = mysqli_query($conn, $sql);
+    echo "<meta http-equiv=\"refresh\" content=\"2;url=". URL::toRoute('Jogo/boffice') ."/\">";
+    exit();
+}
+
+// Código para desbanir o jogador do ID introduzido na textbox
+if (isset($_GET['desbanir'])){
+    $sql = "UPDATE jogador SET estado='Normal' WHERE idJogador='". $_GET['idjogador'] ."' ";
+    $result = mysqli_query($conn, $sql);
+    echo "<meta http-equiv=\"refresh\" content=\"2;url=". URL::toRoute('Jogo/boffice') ."/\">";
+    exit();
+}
+
+?>

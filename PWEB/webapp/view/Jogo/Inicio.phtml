@@ -1,0 +1,42 @@
+<?php
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\WebObjects\Layout;
+use ArmoredCore\WebObjects\URL;
+use ArmoredCore\WebObjects\Post;
+use ArmoredCore\WebObjects\Data;
+
+if ($_SESSION['username']=="admin"){
+    Layout::includeLayout('NavbarAdmin');
+}
+else{
+    Layout::includeLayout('Navbar');
+}
+
+$Bemvindo = "Bem Vindo " . $_SESSION['username'];
+?>
+
+<html>
+
+<head>
+    <title>Início</title>
+    <link rel="stylesheet" href="../../../public/css/Iniciocss.css">
+</head>
+
+<body>
+
+<header>
+    <div class="wrapper">
+
+    </div>
+
+    <div class="welcometext">
+        <h1><?php echo $Bemvindo; ?></h1>
+        <form action="<?= URL::toRoute('Jogo/Tabuleiro') ?>/">
+            <input type="submit" value="JOGAR!">
+        </form>
+    </div>
+</header>
+
+</body>
+
+</html>

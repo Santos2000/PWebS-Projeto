@@ -1,0 +1,50 @@
+<?php
+
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\WebObjects\Layout;
+use ArmoredCore\WebObjects\URL;
+
+if ($_SESSION['username']=="admin"){
+    Layout::includeLayout('NavbarAdmin');
+}
+else{
+    Layout::includeLayout('Navbar');
+}
+
+?>
+
+<html>
+<head>
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../../../public/css/Perfil.css">
+</head>
+
+<body>
+
+<div class="card-container">
+
+    <div class="upper-container">
+
+        <div class="image">
+            <img src="../../../public/img/profile.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="lower-container">
+        <div>
+            <br>
+            <h3>Nome: <?php echo $_SESSION['username'] ?> </h3><br>
+            <h3>Data-Nascimento: <?php echo $_SESSION['data'] ?> </h3><br>
+            <h3>E-mail: <?php echo $_SESSION['mail'] ?> </h3><br>
+            <h3>Password: <?php echo $_SESSION['password'] ?> </h3><br>
+            <h3>Vitorias: 0 </h3>
+            <form action="<?= URL::toRoute('Jogo/Alterar'); ?>/">
+                <button>Alterar Informações</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

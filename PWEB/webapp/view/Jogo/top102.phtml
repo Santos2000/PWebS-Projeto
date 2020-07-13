@@ -1,0 +1,24 @@
+<?php
+
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\WebObjects\Layout;
+use ArmoredCore\Facades\AssetBundler;
+use ArmoredCore\Facades\DebugRenderer;
+use ArmoredCore\WebObjects\URL;
+use ArmoredCore\WebObjects\View;
+use ArmoredCore\WebObjects\Post;
+
+require "connect.php";
+
+$sql = "SELECT t1.NomeJogador,t2.totalScore FROM jogador t1 INNER JOIN score t2 ON (t1.idJogador=t2.idJogador) ORDER BY totalScore DESC LIMIT 10";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result)>0){
+    while ($row = $result -> fetch_assoc()) {
+        echo "<tr>";
+        echo "<td>" . $row['NomeJogador'] . "</td>";
+        echo "<td>" . $row['totalScore'] . "</td>";
+        echo "</tr>";
+    }
+}
+?>

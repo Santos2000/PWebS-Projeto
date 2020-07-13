@@ -1,0 +1,76 @@
+<?php
+
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\Facades\AssetBundler;
+use ArmoredCore\Facades\DebugRenderer;
+use ArmoredCore\WebObjects\URL;
+
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome Page</title>
+        <link rel="stylesheet" href="../../../public/css/Welcomecss.css">
+    </head>
+
+    <body>
+        <section class="b1">
+        <div class="in1">
+            <div class="content">
+                <h1><br>Bem Vindo</h1>
+                <form>
+                    <h2 class="btn"><a href="<?= URL::toRoute('view/Login'); ?>/">Começar</a></h2>
+                    <h2 style="color: #ffffff">REGRAS EM BAIXO!</h2>
+                </form>
+            </div>
+        </div>
+        </section>
+
+        <!-- REGRAS DO JOGO -->
+
+        <div class="ps">
+            <p><h2 align="center">Regras:</h2></p>
+            <p>
+            <h3>
+        Jogadores 2-4 <br>
+        No começo do jogo todos os jogadores têm todos os números disponíveis (1-9). <br>
+        Em cada turno , todos os jogadores têm a sua vez para jogar. <br>
+        O jogador(a) começa o seu turno por atirar 2 dados. Se a soma dos seus numeros restantes for menos que 6<br>
+        o jogador atira um unico dado.<br>
+        Após rodar os dados o jogador usa os numeros que ainda estejam disponiveis, somando-os para igualar ao numero de pintas <br>
+        que os dados apresentam.<br>
+            <br>
+        Por exemplo:<br>
+        Se o jogador rodar os dados e o conjunto de pintas somadas for 8,<br>
+        pode então usar a combinação de numeros:<br>
+
+            <ul>
+            <li>8</li>
+            <li>6,2</li>
+            <li>7,1</li>
+            <li>5, 3</li>
+            <li>5, 2, 1</li>
+            <li>4, 3, 1</li>
+            </ul>
+            <br>
+        E assim continua o jogo com o objectivo de usar mais números possíveis. <br>
+        Quando nao for possivel usar mais numeros para igualar os resultados dos dados, faz-se a soma dos numeros que ainda nao
+            <br>
+        foram usados <br>
+            <br>
+        Por Exemplo: <br>
+        Imaginando que os numeros restantes eram 2,3,5 a soma seria (2+3+5=10) e esse seria a pontuação do devido jogador.
+            <br>
+        O jogador com menos pontos ganha, mas, se algum jogador conseguir usar todos os numeros disponiveis, esse jogador
+            <br>
+        ganha automaticamento a partida. <br>
+            <br>
+            </h3>
+            <h2 align="center">BONS JOGOS!</h2>
+            <h2 align="center"> <a href="#" title="com">Começar a jogar</a> </h2>
+            </p>
+        </div>
+    </body>
+</html>

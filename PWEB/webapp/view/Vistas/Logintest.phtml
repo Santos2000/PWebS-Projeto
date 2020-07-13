@@ -1,0 +1,43 @@
+<?php
+
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\Facades\AssetBundler;
+use ArmoredCore\Facades\DebugRenderer;
+use ArmoredCore\WebObjects\URL;
+use ArmoredCore\WebObjects\View;
+use ArmoredCore\WebObjects\Post;
+use ArmoredCore\WebObjects\Data;
+
+require "connect.php";
+// Obtém os dados introduzidos na página do login - loging.phtml
+$Nome = $_GET['username'];
+$Password = $_GET['password1'];
+
+var_dump($Nome);
+
+$sql = "SELECT * FROM jogador WHERE NomeJogador='".$Nome."' AND PasswordJogador= '".$Password."'";
+$result = mysqli_query($conn,$sql);
+
+if (mysqli_num_rows($result)==1){
+    while ($row = $result ->fetch_assoc()){
+        $estado = $row['estado'];
+    }
+
+    $_SESSION['username'] = $Nome;
+    $_SESSION['password'] = $Password;
+    var_dump($estado);
+    if ($estado == 'Banido'){
+        // Se o estado do utilizador for 'banido', o utilizador é redirecionado para a página banido
+        echo "<meta http-equiv=\"refresh\" content=\"2;url=". URL::toRoute('Jogo/Banido') ."/\">";
+    }
+    else if ($estado == 'Normal'){
+        // Se o estado do utilizador for 'normal', o utilizador é redirecionado para a página jogo - página "inicial" do website
+        echo "<meta http-equiv=\"refresh\" content=\"2;url=". URL::toRoute('Jogo/Jogo') ."/\">";
+    }
+    exit();
+}
+else{
+    // Se os dados não estiverem na base de dados, somos redirecionados para a página registo
+    echo "<meta http-equiv=\"refresh\" content=\"2;url=". URL::toRoute('view/Registo') ."/\">";
+}
+?>

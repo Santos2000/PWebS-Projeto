@@ -1,0 +1,43 @@
+<?php
+
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\Facades\AssetBundler;
+use ArmoredCore\Facades\DebugRenderer;
+use ArmoredCore\WebObjects\URL;
+use ArmoredCore\WebObjects\Post;
+use ArmoredCore\WebObjects\Data;
+
+?>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Login!</title>
+        <link rel="stylesheet" href="../../../public/css/Logincss.css">
+    </head>
+
+    <body>
+        <div class="titulo"><h1>Entrar/Registar</h1></div>
+        <div class="container">
+            <div class="left"></div>
+            <div class="right">
+                <div class="FormBox">
+                    <form action="<?= URL::toRoute('view/Logintest') ?>/">
+                        <p>Username</p>
+                        <input type="text" id="username" name="username" placeholder="Inserir username">
+                        <p>Password</p>
+                        <input type="password" id="password1" name="password1" placeholder="Inserir Password">
+                        <br>
+                        <input type="submit" value="Entrar">
+                    </form>
+
+                    <!-- Se se pretender registar, o utilizador é redirecionado para a página registo -->
+                    <form action="<?= URL::toRoute('view/Registo') ?>/">
+                        <input type="submit" value="Registar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

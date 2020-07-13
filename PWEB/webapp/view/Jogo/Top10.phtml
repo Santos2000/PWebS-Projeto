@@ -1,0 +1,40 @@
+<?php
+
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\WebObjects\Layout;
+use ArmoredCore\Facades\AssetBundler;
+use ArmoredCore\Facades\DebugRenderer;
+use ArmoredCore\WebObjects\URL;
+use ArmoredCore\WebObjects\View;
+use ArmoredCore\WebObjects\Post;
+
+if ($_SESSION['username']=="admin"){
+    Layout::includeLayout('NavbarAdmin');
+}
+else{
+    Layout::includeLayout('Navbar');
+}
+
+?>
+
+<html>
+
+<head>
+    <title>Back-Office</title>
+    <link rel="stylesheet" href="../../../public/css/boffice.css">
+</head>
+
+<body>
+<div class="tabela">
+    <table width="100%">
+        <tr>
+            <th>Nome do Jogador</th>
+            <th>Pontuação</th>
+        </tr>
+        <?php include_once "top102.phtml" ?>
+    </table>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<?php
+
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\Facades\AssetBundler;
+use ArmoredCore\Facades\DebugRenderer;
+use ArmoredCore\WebObjects\URL;
+use ArmoredCore\WebObjects\View;
+use ArmoredCore\WebObjects\Post;
+use ArmoredCore\WebObjects\Data;
+
+require "connect.php";
+var_dump($_GET);
+echo "<br>";
+var_dump($_SESSION);
+
+if (isset($_GET['alterar'])){
+
+    if ($_GET['datealt']!=""){
+        $_SESSION['data'] = $_GET['datealt'];
+        $sql = "UPDATE jogador SET DataNascimento = '". $_SESSION['data'] ."'  WHERE idJogador ='". $_SESSION['idJogador'] ."' ";
+        $result = mysqli_query($conn,$sql);
+    }
+
+    if ($_GET['emailalt']!=""){
+        $_SESSION['mail'] = $_GET['emailalt'];
+        $sql = "UPDATE jogador SET EmailJogador = '". $_SESSION['mail'] ."'  WHERE idJogador ='". $_SESSION['idJogador'] ."' ";
+        $result = mysqli_query($conn,$sql);
+    }
+
+    if ($_GET['passalt']!=""){
+        $_SESSION['password'] = $_GET['passalt'];
+        $sql = "UPDATE jogador SET PasswordJogador = '". $_SESSION['password'] ."'  WHERE idJogador ='". $_SESSION['idJogador'] ."' ";
+        $result = mysqli_query($conn,$sql);
+    }
+
+    echo "<meta http-equiv=\"refresh\" content=\"2;url=". URL::toRoute('Jogo/Perfil') ."/\">";
+}
+
+?>

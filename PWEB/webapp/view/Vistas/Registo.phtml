@@ -1,0 +1,66 @@
+<?php
+
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\Facades\AssetBundler;
+use ArmoredCore\Facades\DebugRenderer;
+use ArmoredCore\WebObjects\URL;
+use ArmoredCore\WebObjects\Data;
+
+$mensagemErro= Data::get('mensagemErro');
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Registo</title>
+    <link rel="stylesheet" href="../../../public/css/Registocss.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10-offset=md-1">
+            <div class="row">
+                <div class="col-md-5 register-left">
+                    <h3>Ler Regras</h3>
+                    <p>Se ainda não conhece as regras deste jogo é possivel ler Aqui</p>
+                    <img src="../../../public/img/Seta.png"> <br>
+                    <form>
+                        <button class="btn btn-primary"><a href="<?= URL::toRoute('view/welcome') ?>/">Ler Regras!</a></button>
+                    </form>
+                </div>
+                <div class="col-md-7 register-right">
+                    <h2>Registar Aqui!</h2>
+                    <form method="post" action="<?= URL::toRoute('view/Login/'); ?>/">
+                        <div class="register-form">
+                            <div class="form-group">
+                                <input type="text" id="nomecompleto" name="nomecompleto" class="form-control" placeholder="Nome Completo">
+                            </div>
+                            <div class="form-group">
+                                <input type="date" id="datanasc"  name="datanasc" class="form-control" placeholder="Data de Nascimento">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="username" name="username" class="form-control" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="Confirmar Password">
+                            </div>
+                          <input type="submit" value="Registar" name="registo">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<?php
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\Facades\AssetBundler;
+use ArmoredCore\Facades\DebugRenderer;
+use ArmoredCore\WebObjects\URL;
+?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../public/css/Jogocss.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+<nav>
+    <label class="logo">Shut the Box</label>
+    <ul>
+        <li><a href="<?= URL::toRoute('Jogo/Jogo') ?>/">Inicio</a></li>
+        <li><a href="<?= URL::toRoute('Jogo/boffice') ?>/">Back-Office</a></li>
+        <li><a href="<?= URL::toRoute('Jogo/Top10') ?>/">TOP 10</a></li>
+        <li><a href="<?= URL::toRoute('Jogo/Perfiltest') ?>/">Perfil</a></li>
+        <li><a href="<?= URL::toRoute('Jogo/Regras') ?>/">Regras</a></li>
+        <li><a href="<?= URL::toRoute('Jogo/About') ?>/">About</a></li>
+        <li><a href="<?= URL::toRoute('view/Login') ?>/">Logout</a></li>
+    </ul>
+</nav>
+
+</body>
+
+</html>

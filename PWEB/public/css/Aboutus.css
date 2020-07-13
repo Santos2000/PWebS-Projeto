@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans" , sans-serif;
+    box-sizing: border-box;
+}
+
+body.separar{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #262626;
+}
+
+
+.about-section{
+    background: url("../img/imgback.jpg");
+    background-size: 100%;
+    background-color: white;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: grey;
+    padding: 100px;
+    opacity: 90%;
+}
+
+.inner-container1{
+    width: 55%;
+    float: right;
+    background-color: grey;
+    padding: 65px;
+    opacity: 90%;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.texto{
+    font-size: 17px;
+    color: #262626;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+

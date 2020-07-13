@@ -1,0 +1,48 @@
+div{
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.pecasdireita{
+    float: right;
+    width: 20%;
+    margin-left: 2%;
+    background-color: #a6af13;
+    text-align: center;
+    border-style: solid;
+    border-color: #262626;
+}
+
+.pecasesquerda{
+    float: left;
+    width: 20%;
+    background-color: #262626;
+    text-align: center;
+    border-style: solid;
+    border-color: #a6af13;
+}
+
+body{
+    background: url("../../public/img/tabuleiro.jpg");
+}
+
+.pecasesquerda button{
+    margin-top: 20px;
+    border-style: solid;
+    border-color: #a6af13;
+    background: transparent;
+    width: 90%;
+    height: 50px;
+    align-content: center;
+    color: #a6af13;
+}
+
+.pecasdireita button{
+    margin-top: 20px;
+    border-style: solid;
+    border-color: black;
+    background: transparent;
+    width: 90%;
+    height: 50px;
+    align-content: center;
+}

@@ -1,0 +1,52 @@
+<?php
+
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\WebObjects\Layout;
+use ArmoredCore\Facades\AssetBundler;
+use ArmoredCore\Facades\DebugRenderer;
+use ArmoredCore\WebObjects\URL;
+use ArmoredCore\WebObjects\View;
+use ArmoredCore\WebObjects\Post;
+
+Layout::includeLayout('NavbarAdmin');
+
+?>
+
+<html>
+
+<head>
+    <title>Back-Office</title>
+    <link rel="stylesheet" href="../../../public/css/boffice.css">
+</head>
+
+<body>
+<div class="tabela">
+    <table width="100%">
+        <tr>
+            <th>ID Jogador</th>
+            <th>Nome do Jogador</th>
+            <th>Email do Jogador</th>
+            <th>Estado</th>
+        </tr>
+        <?php include_once "boffice2.phtml" ?>
+    </table>
+</div>
+
+<br>
+<br>
+<label for="textb">Inserir ID do Jogador: </label>
+
+
+<form action="<?= URL::toRoute('Jogo/boffice2') ?>/">
+    <input type="text" name="idjogador" placeholder="IdJogador" id="textb">
+    <input class="banir" name="banir" type="submit" value="Banir Jogador!">
+</form>
+<br>
+<form action="<?= URL::toRoute('Jogo/boffice2') ?>/">
+    <input type="text" name="idjogador" placeholder="IdJogador" id="textb">
+    <input class="desbanir" name="desbanir" type="submit" value="Desbanir Jogador!">
+</form>
+
+</body>
+
+</html>

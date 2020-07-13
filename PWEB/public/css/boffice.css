@@ -1,0 +1,24 @@
+div{
+    width: 100%;
+    height: 80%
+}
+
+input[type="submit"]{
+    width: 150px;
+    height: 50px;
+}
+
+input[type="text"]{
+    width: 150px;
+    height: 50px;
+}
+
+.banir{
+    background-color: red;
+    color: white;
+}
+
+.desbanir{
+    background-color: #a6af13;
+    color: black;
+}

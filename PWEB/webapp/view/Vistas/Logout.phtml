@@ -1,0 +1,12 @@
+<?php
+
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\Facades\AssetBundler;
+use ArmoredCore\Facades\DebugRenderer;
+use ArmoredCore\WebObjects\URL;
+
+session_destroy();
+var_dump($_SESSION);
+
+echo "<meta http-equiv=\"refresh\" content=\"2;url=". URL::toRoute('view/Login') ."/\">";
+?>

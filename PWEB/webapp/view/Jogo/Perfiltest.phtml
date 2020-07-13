@@ -1,0 +1,26 @@
+<?php
+
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\Facades\AssetBundler;
+use ArmoredCore\Facades\DebugRenderer;
+use ArmoredCore\WebObjects\URL;
+use ArmoredCore\WebObjects\View;
+use ArmoredCore\WebObjects\Post;
+use ArmoredCore\WebObjects\Data;
+
+require ("connect.php");
+
+$sql = "SELECT * FROM jogador WHERE NomeJogador= '". $_SESSION['username'] ."' ";
+
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result)>0){
+    while ($row = $result -> fetch_assoc()) {
+        $_SESSION['idJogador'] = $row['idJogador'];
+        $_SESSION['mail'] = $row['EmailJogador'];
+        $_SESSION['data'] = $row['DataNascimento'];
+    }
+    echo "<meta http-equiv=\"refresh\" content=\"0;url=". URL::toRoute('Jogo/Perfil') ."/\">";
+}
+
+?>

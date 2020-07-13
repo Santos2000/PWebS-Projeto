@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url("../../public/img/bg1.jpg");
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.welcometext{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+
+.welcometext h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+input{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background: #262626
+}

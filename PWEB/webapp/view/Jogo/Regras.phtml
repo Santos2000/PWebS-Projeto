@@ -1,0 +1,49 @@
+<?php
+
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\WebObjects\Layout;
+use ArmoredCore\WebObjects\URL;
+
+if ($_SESSION['username']=="admin"){
+    Layout::includeLayout('NavbarAdmin');
+}
+else{
+    Layout::includeLayout('Navbar');
+}
+
+?>
+<html>
+
+<head>
+    <title>Regras</title>
+    <link rel="stylesheet" href="../../../public/css/Aboutus.css">
+</head>
+
+<body>
+<div class="separar">
+    <div class="about-section">
+
+        <div class="inner-container1">
+
+            <h1 align="center">Regras do Jogo</h1>
+            <br>
+            <p class="texto">
+                Jogadores 2-4 <br>
+                No começo do jogo todos os jogadores têm todos os numeros disponiveis (1-9). <br>
+                Em cada turno , todos os jogadores têm a sua vez para jogar. <br>
+                O jogador(a) começa o seu turno por atirar 2 dados. Se a soma dos seus numeros restantes for menos que 6<br>
+                o jogador atira um unico dado.<br>
+                Após rodar os dados o jogador usa os numeros que ainda estejam disponiveis, somando-os para igualar ao numero de pintas <br>
+                que os dados apresentam.<br>
+                <br>
+                Por exemplo:<br>
+                Se o jogador rodar os dados e o conjunto de pintas somadas for 8,<br>
+                pode então usar a combinação de numeros:<br>
+            </p>
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>

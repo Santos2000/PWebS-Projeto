@@ -1,0 +1,44 @@
+<?php
+
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\WebObjects\Layout;
+use ArmoredCore\WebObjects\URL;
+
+if ($_SESSION['username']=="admin"){
+    Layout::includeLayout('NavbarAdmin');
+}
+else{
+    Layout::includeLayout('Navbar');
+}
+
+?>
+
+<html>
+
+<head>
+    <title>About Us!</title>
+    <link rel="stylesheet" href="../../../public/css/Aboutus.css">
+</head>
+
+<body>
+<div class="separar">
+    <div class="about-section">
+
+        <div class="inner-container">
+
+            <h1 align="center">About Us</h1>
+            <p class="texto">
+
+                Este Projeto foi realizado por André Santos nº2190764 , Francisco Matias nº2190771 e Pedro Monteiro nº2190769,
+                alunos do curso Técnico Superior De Programação de Sistemas De Informação no Politécnico de Leiria , Polo Torres Vedras,
+                no âmbito da disciplina "Programação para a Web - Servidor" <br>
+                Tem como objectivo a criação de um site do jogo Shut the Box usando a framework "weblogicmvc".
+
+            </p>
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>

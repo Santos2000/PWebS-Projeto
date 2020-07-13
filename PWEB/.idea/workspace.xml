@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7001a1a5-552a-4369-8b2d-3d517ff80e18" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Html5" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/Dave1010/Hug" />
+      <path value="$PROJECT_DIR$/vendor/Hoa/Protocol" />
+      <path value="$PROJECT_DIR$/vendor/Hoa/Consistency" />
+      <path value="$PROJECT_DIR$/vendor/Hoa/Event" />
+      <path value="$PROJECT_DIR$/vendor/Hoa/Exception" />
+      <path value="$PROJECT_DIR$/vendor/Hoa/Websocket" />
+      <path value="$PROJECT_DIR$/vendor/Hoa/Socket" />
+      <path value="$PROJECT_DIR$/vendor/phpFastCache/Util" />
+      <path value="$PROJECT_DIR$/vendor/phpFastCache/Proxy" />
+      <path value="$PROJECT_DIR$/vendor/phpFastCache/Bundle" />
+      <path value="$PROJECT_DIR$/vendor/phpFastCache/Core" />
+      <path value="$PROJECT_DIR$/vendor/phpFastCache/Drivers" />
+      <path value="$PROJECT_DIR$/vendor/phpFastCache/Entities" />
+      <path value="$PROJECT_DIR$/vendor/phpFastCache/Cache" />
+      <path value="$PROJECT_DIR$/vendor/phpFastCache/Exceptions" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/Nette/Utils" />
+      <path value="$PROJECT_DIR$/vendor/Nette/PhpGenerator" />
+      <path value="$PROJECT_DIR$/vendor/Nette/Iterators" />
+      <path value="$PROJECT_DIR$/vendor/Netpromotion/Profiler" />
+      <path value="$PROJECT_DIR$/vendor/Kdyby/Extension" />
+      <path value="$PROJECT_DIR$/vendor/Aura/Di" />
+      <path value="$PROJECT_DIR$/vendor/Aura/Includer" />
+      <path value="$PROJECT_DIR$/vendor/Aura/Filter" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-diactoros" />
+      <path value="$PROJECT_DIR$/vendor/Pd/Diagnostics" />
+      <path value="$PROJECT_DIR$/vendor/Filisko/PDOplus" />
+      <path value="$PROJECT_DIR$/vendor/legacy/Haanga" />
+      <path value="$PROJECT_DIR$/vendor/php-activerecord/lib" />
+      <path value="$PROJECT_DIR$/vendor/php-activerecord/examples" />
+      <path value="$PROJECT_DIR$/vendor/Windwalker/uri" />
+      <path value="$PROJECT_DIR$/vendor/Windwalker/renderer" />
+      <path value="$PROJECT_DIR$/vendor/Psr/Interop" />
+      <path value="$PROJECT_DIR$/vendor/Windwalker/edge" />
+      <path value="$PROJECT_DIR$/vendor/Psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/Windwalker/http" />
+      <path value="$PROJECT_DIR$/vendor/Psr/Log" />
+      <path value="$PROJECT_DIR$/vendor/Symfony/Component" />
+      <path value="$PROJECT_DIR$/vendor/Windwalker/Cache" />
+      <path value="$PROJECT_DIR$/vendor/Psr/Http" />
+      <path value="$PROJECT_DIR$/vendor/Windwalker/structure" />
+      <path value="$PROJECT_DIR$/vendor/Psr/Cache" />
+      <path value="$PROJECT_DIR$/vendor/Windwalker/loader" />
+      <path value="$PROJECT_DIR$/vendor/Psr/Container" />
+      <path value="$PROJECT_DIR$/vendor/php-activerecord/test" />
+      <path value="$PROJECT_DIR$/vendor/Psr/Hug" />
+      <path value="$PROJECT_DIR$/vendor/Tracy/assets" />
+      <path value="$PROJECT_DIR$/vendor/Tracy/Bridges" />
+      <path value="$PROJECT_DIR$/vendor/Stolz/Assets" />
+      <path value="$PROJECT_DIR$/vendor/PetrKnap/Php" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1dGtR1obP4KZAVQU8Zw4lkmqKdR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="Debugger::barDump&#9;null&#9;null&#10;code sty&#9;ACTION&#9;ChangeCodeStyleScheme&#10;Session::start&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="php.override.implement.member.chooser.php.doc" value="DEFAULT" />
+    <property name="recentsLimit" value="5" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\PWEB\webapp\view\Jogo" />
+      <recent name="E:\wamp64\www\weblogicmvc\vendor\Pd\Diagnostics" />
+      <recent name="E:\wamp64\www\weblogicmvc\webapp\startup" />
+      <recent name="E:\wamp64\www\weblogicmvc\webapp\view\layout" />
+      <recent name="E:\wamp64\www\weblogicmvc\framework\armoredcore" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\PWEB\webapp\view\Vistas" />
+      <recent name="C:\wamp64\www\PWEB\webapp\view" />
+      <recent name="C:\wamp64\www\PWEB\webapp\view\Registo" />
+      <recent name="C:\wamp64\www\PWEB\webapp\controller" />
+      <recent name="E:\wamp64\wamp64\www\weblogicmvc\framework\ArmoredCore\WebObjects" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.weblogicmvc">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration name="weblogicmvc" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="startupconfig.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/webapp/startup/startupconfig.php">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHP Script.startupconfig.php" />
+      <item itemvalue="PHPUnit.weblogicmvc" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.startupconfig.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7001a1a5-552a-4369-8b2d-3d517ff80e18" name="Default" comment="" />
+      <created>1462184024711</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1462184024711</updated>
+      <workItem from="1491344815131" duration="229869000" />
+      <workItem from="1492187771034" duration="11222000" />
+      <workItem from="1492254238550" duration="47648000" />
+      <workItem from="1492427300750" duration="52033000" />
+      <workItem from="1492528554961" duration="747000" />
+      <workItem from="1492529340633" duration="373000" />
+      <workItem from="1492530197275" duration="2484000" />
+      <workItem from="1492542296752" duration="17485000" />
+      <workItem from="1492626948768" duration="11495000" />
+      <workItem from="1592063247719" duration="1344000" />
+      <workItem from="1592064637326" duration="6836000" />
+      <workItem from="1592135512127" duration="3777000" />
+      <workItem from="1592143350087" duration="134000" />
+      <workItem from="1592143902862" duration="11190000" />
+      <workItem from="1592156425680" duration="1949000" />
+      <workItem from="1592223121007" duration="197000" />
+      <workItem from="1592228445945" duration="6732000" />
+      <workItem from="1592299552847" duration="4263000" />
+      <workItem from="1592305141987" duration="16877000" />
+      <workItem from="1592487579377" duration="3555000" />
+      <workItem from="1592491178696" duration="8170000" />
+      <workItem from="1592500079512" duration="215000" />
+      <workItem from="1592561143250" duration="86000" />
+      <workItem from="1592562304698" duration="1265000" />
+      <workItem from="1592823773137" duration="2001000" />
+      <workItem from="1592860593273" duration="4100000" />
+      <workItem from="1594502239924" duration="14265000" />
+      <workItem from="1594561647288" duration="17124000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="387" y="5" key="#PHP" timestamp="1592068813168">
+      <screen x="0" y="0" width="1360" height="725" />
+    </state>
+    <state x="387" y="5" key="#PHP/0.0.1360.725@0.0.1360.725" timestamp="1592068813168" />
+    <state x="413" y="164" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592494733474">
+      <screen x="0" y="0" width="1360" height="725" />
+    </state>
+    <state x="413" y="164" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1360.725@0.0.1360.725" timestamp="1592494733474" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1592488326330">
+      <screen x="0" y="0" width="1360" height="725" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1360.725@0.0.1360.725" timestamp="1592488326330" />
+    <state x="285" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592233549192">
+      <screen x="0" y="0" width="1360" height="725" />
+    </state>
+    <state x="285" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1360.725@0.0.1360.725" timestamp="1592233549192" />
+    <state x="647" y="250" key="run.anything.popup" timestamp="1594572216037">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="647" y="250" key="run.anything.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1594572216037" />
+    <state x="343" y="46" width="672" height="678" key="search.everywhere.popup" timestamp="1592493709893">
+      <screen x="0" y="0" width="1360" height="725" />
+    </state>
+    <state x="343" y="46" width="672" height="678" key="search.everywhere.popup/0.0.1360.725@0.0.1360.725" timestamp="1592493709893" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/webapp/view/Jogo/About.phtml</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/webapp/view/Vistas/Banido.phtml</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/webapp/view/Vistas/Banido.phtml</url>
+          <line>2</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/webapp/view/Vistas/Registo.phtml</url>
+          <line>2</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
